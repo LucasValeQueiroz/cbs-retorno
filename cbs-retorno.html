@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Endereço de retorno — Apuração da CBS</title>
+<style>
+  :root {
+    --fundo: #f6f7f9;
+    --cartao: #ffffff;
+    --texto: #1c2430;
+    --suave: #5b6675;
+    --linha: #e2e6ec;
+    --marca: #1f6feb;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --fundo: #11151b;
+      --cartao: #1a2029;
+      --texto: #e8edf3;
+      --suave: #98a4b3;
+      --linha: #2b333f;
+      --marca: #5c9dff;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 48px 16px;
+    background: var(--fundo);
+    color: var(--texto);
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  }
+  main {
+    max-width: 620px;
+    margin: 0 auto;
+    background: var(--cartao);
+    border: 1px solid var(--linha);
+    border-radius: 14px;
+    padding: 32px;
+  }
+  h1 { font-size: 1.35rem; margin: 0 0 4px; }
+  .etiqueta {
+    display: inline-block;
+    font-size: .72rem;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--marca);
+    font-weight: 700;
+    margin-bottom: 14px;
+  }
+  p { color: var(--suave); margin: 0 0 14px; }
+  p.forte { color: var(--texto); }
+  ul { color: var(--suave); padding-left: 20px; margin: 0 0 14px; }
+  li { margin-bottom: 6px; }
+  footer {
+    margin-top: 24px;
+    padding-top: 16px;
+    border-top: 1px solid var(--linha);
+    font-size: .85rem;
+    color: var(--suave);
+  }
+</style>
+</head>
+<body>
+<main>
+  <span class="etiqueta">Portal do Contribuinte</span>
+  <h1>Endereço de retorno da apuração da CBS</h1>
+
+  <p class="forte">Esta página não tem conteúdo para ler. Ela existe para responder a uma
+  verificação técnica da Receita Federal.</p>
+
+  <p>A API de apuração assistida da CBS é assíncrona: o sistema envia um pedido, a Receita
+  devolve um tíquete e, quando o resultado fica pronto, ela avisa num endereço de retorno
+  informado no pedido. Antes de aceitar qualquer solicitação, a Receita confere se esse
+  endereço responde — e cancela o pedido se não responder.</p>
+
+  <p>O Portal do Contribuinte roda no computador do escritório, que não tem endereço público
+  na internet. Então este é o endereço informado, e o resultado é buscado de outro jeito:</p>
+
+  <ul>
+    <li>esta página responde à verificação da Receita;</li>
+    <li>o Portal consulta a situação do tíquete e baixa o arquivo <b>direto da Receita</b>, por um
+        canal autenticado com certificado digital — não por aqui;</li>
+    <li>esta é uma página estática: <b>não executa código, não tem formulário, não grava nada e não
+        exibe nada recebido</b>. Quando a Receita envia o aviso de conclusão para este endereço, não
+        há o que o receba — a notificação é simplesmente descartada pelo servidor.</li>
+  </ul>
+
+  <p>Nenhum valor, documento fiscal ou dado de contribuinte é publicado, armazenado ou exibido
+  nesta página, em nenhum momento.</p>
+
+  <footer>
+    Se você chegou aqui por engano, não há nada a fazer.
+    <a href="./portaldocontribuinte.html">Conheça o Portal do Contribuinte</a>.
+  </footer>
+</main>
+</body>
+</html>
